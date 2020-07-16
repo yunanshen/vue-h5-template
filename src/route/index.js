@@ -14,17 +14,18 @@ const routes = [
     {
         path: "/",
         name: '首页',
-        redirect: '/home',
+        redirect: '/news/5',
         component: () => import(/* webpackChunkName: 'home' */ '@/view/home'),
         children: [
+            // {
+            //     path: '/home',
+            //     name: 'home',
+            //     component: () => import(/* webpackChunkName: 'home' */ '@/view/homeIndex'),
+            //     meta:{
+            //         keepAlive:true
+            //     }
+            // }, 
             {
-                path: '/home',
-                name: 'home',
-                component: () => import(/* webpackChunkName: 'home' */ '@/view/homeIndex'),
-                meta:{
-                    keepAlive:true
-                }
-            }, {
                 path: '/news/:id',
                 name: 'newsList',
                 component: () => import(/* webpackChunkName: 'home' */ '@/view/newsList'),

@@ -91,7 +91,7 @@ export default {
 }
 .logo_sty {
     & > img {
-        width:7.76rem;
+        width:6.76rem;
     }
 }
 .search_sty {

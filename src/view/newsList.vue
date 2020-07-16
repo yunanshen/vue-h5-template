@@ -2,7 +2,7 @@
   <div class="news_content_scoll">
     <scroll :onLoadMore="onLoadMore" :enableLoadMore="enableLoadMore">
       <!-- 新闻模块 -->
-      <y-news-item :list="list" title="打私要闻" type="2"></y-news-item>
+      <y-news-item :list="list" title="打私要闻" :type="type"></y-news-item>
     </scroll>
   </div>
 </template>
@@ -24,22 +24,35 @@ export default {
       enableLoadMore: true
     };
   },
+  computed: {
+    type() {
+      if(this.$route.params.id === '5') {
+        return '1'
+      }else {
+        return '2'
+      }
+    }
+  },
   watch: {
-    $route: function(val,oldVal) {
+    $route: function(val, oldVal) {
       // console.log(this.$route,9999)
       // if(!this.$route.meta.isBack && val.name !== 'newsDetail') {
       //   sessionStorage.removeItem('scrollTop')
       // }
-      if(val.name === 'newsDetail') {
-        return
+      if (val.name === "newsDetail") {
+        return;
       }
-      if(val.meta.keepAlive) {
-        return
+      if (val.meta.keepAlive) {
+        return;
       }
       this.list = [];
       this.params.pageNumber = 1;
       this.enableLoadMore = true;
-      if (this.$route.params.id !== '32' && this.$route.params.id !== '33' && this.$route.params.id) {
+      if (
+        this.$route.params.id !== "32" &&
+        this.$route.params.id !== "33" &&
+        this.$route.params.id
+      ) {
         this.getNewsList(this.$route.params.id);
       }
     },

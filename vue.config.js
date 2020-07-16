@@ -6,16 +6,16 @@ module.exports = {
         proxy: {
             // proxy all requests starting with /api to jsonplaceholder
             '/menhu': {
-                target: 'http://192.168.17.17:7070',   //代理接口
-                // target: 'http://192.168.1.22:8083',   //代理接口
+                // target: 'http://192.168.17.17:7070',   //代理接口
+                target: 'http://192.168.1.22:8083',   //代理接口
                 changeOrigin: true,
                 // pathRewrite: {
                 //     '^/menhu': '/'    //代理的路径
                 // }
             },
             'menhu/upload': {
-                target: 'http://192.168.17.4:7010',
-                // target: 'http://127.0.0.1:8083/',
+                // target: 'http://192.168.17.4:7010',
+                target: 'http://127.0.0.1:8083/',
                 changeOrigin:true
             }
         }

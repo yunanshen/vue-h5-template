@@ -1,6 +1,6 @@
 <template>
   <div class="news_item_content_sty" ref="all">
-    <div class="news_item_header_sty" v-if="type === '1'">
+    <div class="news_item_header_sty" v-if="type === '3'">
       <h3>{{title}}</h3>
       <p @click="$emit('goAll')">
         <span>全部</span>
