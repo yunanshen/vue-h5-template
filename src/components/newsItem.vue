@@ -155,6 +155,9 @@ export default {
   & > li {
     width: 100%;
     padding: 10px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #f1f1f1;
+    }
     &:first-child {
       padding-top: 0;
     }
