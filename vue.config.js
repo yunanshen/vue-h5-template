@@ -1,7 +1,7 @@
 const path = require("path");
 module.exports = {
     // lintOnSave: true,
-    // publicPath: './',
+    publicPath: './',
     devServer: {
         proxy: {
             // proxy all requests starting with /api to jsonplaceholder

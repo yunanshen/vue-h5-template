@@ -2,7 +2,7 @@
   <div class="guard_sty">
     <router-link :to="`/newsDetail/${l.id}`" tag="ul" v-for="l in list" :key="l.id">
       <li>
-        <img :src="`/menhu${l.image}`" />
+        <img :src="`./menhu${l.image}`" />
         <div>{{l.title}}</div>
       </li>
       <li>

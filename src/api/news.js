@@ -1,5 +1,5 @@
 import Http from '@/utils/http'
-const publicUrl = '/menhu'
+const publicUrl = './menhu'
 
 
 

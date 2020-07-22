@@ -61,7 +61,7 @@ const routes = [
 const router = new VueRouter({
     routes,
     originalPush,
-    mode:'history',
+    mode:'hash',
     base: process.env.BASE_URL,
     // scrollBehavior(to,from,savedPosition) {
     //     if(from.name === 'newsDetail') {

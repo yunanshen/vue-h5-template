@@ -14,7 +14,7 @@
           <p>{{l.title}}</p>
           <div class="center_img_sty">
             <div>
-              <img :src="`/menhu${l.image}`" alt="新闻图片" />
+              <img :src="`./menhu${l.image}`" alt="新闻图片" />
             </div>
           </div>
           <div class="time_sty">
@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="news_img_sty" v-if="l.image">
-            <img :src="`/menhu${l.image}`" alt="新闻图片" />
+            <img :src="`./menhu${l.image}`" alt="新闻图片" />
           </div>
         </div>
       </li>

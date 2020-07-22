@@ -26,7 +26,7 @@
           class="slide_sty"
           :style="`height:${swiperHeight}px`"
         >
-          <img v-if="item.image" :src="`/menhu/${item.image}`" class="swiper-img-sty" />
+          <img v-if="item.image" :src="`./menhu/${item.image}`" class="swiper-img-sty" />
           <div class="swript_title_sty">
             <div>头条</div>
             <p>{{item.title}}</p>

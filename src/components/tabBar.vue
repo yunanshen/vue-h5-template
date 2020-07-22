@@ -56,7 +56,7 @@ export default {
           },
           {
             key: "65",
-            text: "通知通告"
+            text: "通知通报"
           },
           {
             key: "27",
